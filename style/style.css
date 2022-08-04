@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Oswald:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../images/snakegameg.png"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    color: beige;
+    top: 500px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    color: beige;
+    top: 560px;
+    right: 174px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+#board{
+    background: url("../images/snakegameg.png");
+    background-size: .75rem;
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid rgb(137, 249, 180);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(#d4fc79, #96e6a1);
+    border: 2px solid rgb(15, 95, 87); 
+    transform: scale(1.2);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: rgb(9, 84, 87);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(#df5a72, #ffae8b);
+    border: .25vmin solid rgb(81, 3, 3);
+    border-radius: 8px;
+}
